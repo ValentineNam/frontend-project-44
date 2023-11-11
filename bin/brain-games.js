@@ -8,3 +8,4 @@ let name = '';
 console.log('Welcome to the Brain Games!');
 name = getName();
 console.log(`Hello, ${name}`);
+
