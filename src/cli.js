@@ -1,4 +1,4 @@
 import readlineSync from 'readline-sync';
 
-const getName = () => readlineSync.question('May I have your name? ');
-export default getName;
+const getUserInput = (question) => readlineSync.question(question);
+export default getUserInput;
