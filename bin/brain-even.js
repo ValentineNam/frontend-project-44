@@ -2,7 +2,7 @@
 
 import getUserInput from '../src/cli.js';
 import generateRandomInt from '../src/math-funcs.js';
-import { gameLoop } from '../src/index.js';
+import gameLoop from '../src/index.js';
 
 const checkIsEven = (num) => (num % 2 === 0);
 
@@ -21,7 +21,7 @@ const checkAnswer = (isEven, answer) => {
 const game = (name) => {
   let res = true;
   const num = generateRandomInt();
-  console.log(`Question: ${num}`);
+  console.log(`Answer "yes" if the number is even, otherwise answer "no".\nQuestion: ${num}`);
   const answer = getUserInput('Your answer: ');
   if (checkAnswer(checkIsEven(num), answer)) {
     console.log('Correct!');

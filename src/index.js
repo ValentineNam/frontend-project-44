@@ -15,4 +15,4 @@ const gameLoop = (fn) => {
   }
 };
 
-export { gameLoop };
+export default gameLoop;
