@@ -2,6 +2,7 @@
 
 import getUserInput from '../src/cli.js';
 import generateRandomInt from '../src/math-funcs.js';
+import { gameLoop } from '../src/index.js';
 
 const checkIsEven = (num) => (num % 2 === 0);
 
@@ -17,16 +18,7 @@ const checkAnswer = (isEven, answer) => {
   return res;
 };
 
-const gameLoop = () => {
-  let isWin = true;
-  let name = '';
-
-  console.log('Welcome to the Brain Games!');
-  name = getUserInput('May I have your name? ');
-  console.log(`Hello, ${name}`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-  for (let quest = 3; quest > 0; quest -= 1) {
+const game = (name) => {
     const num = generateRandomInt();
     console.log(`Question: ${num}`);
     const answer = getUserInput('Your answer: ');
@@ -37,13 +29,7 @@ const gameLoop = () => {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.`);
       console.log(`Let's try again, ${name}`);
       isWin = false;
-      break;
     }
-  }
+}
 
-  if (isWin) {
-    console.log(`Congratulations, ${name}`);
-  }
-};
-
-gameLoop();
+gameLoop(game);

@@ -2,8 +2,11 @@
 
 import getUserInput from '../src/cli.js';
 
-let name = '';
+const welcome = () => {
+    let name = '';
+    console.log('Welcome to the Brain Games!');
+    name = getUserInput('May I have your name? ');
+    console.log(`Hello, ${name}`); 
+}
 
-console.log('Welcome to the Brain Games!');
-name = getUserInput('May I have your name? ');
-console.log(`Hello, ${name}`);
+export default welcome;
