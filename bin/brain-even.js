@@ -19,17 +19,19 @@ const checkAnswer = (isEven, answer) => {
 };
 
 const game = (name) => {
-    const num = generateRandomInt();
-    console.log(`Question: ${num}`);
-    const answer = getUserInput('Your answer: ');
-    if (checkAnswer(checkIsEven(num), answer)) {
-      console.log('Correct!');
-    } else {
-      const correct = checkIsEven(num) ? 'yes' : 'no';
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.`);
-      console.log(`Let's try again, ${name}`);
-      isWin = false;
-    }
-}
+  let res = true;
+  const num = generateRandomInt();
+  console.log(`Question: ${num}`);
+  const answer = getUserInput('Your answer: ');
+  if (checkAnswer(checkIsEven(num), answer)) {
+    console.log('Correct!');
+  } else {
+    const correct = checkIsEven(num) ? 'yes' : 'no';
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.`);
+    console.log(`Let's try again, ${name}`);
+    res = false;
+  }
+  return res;
+};
 
 gameLoop(game);

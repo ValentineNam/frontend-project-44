@@ -1,18 +1,18 @@
-import welcome from "../bin/brain-games";
+import welcome from '../bin/brain-games.js';
 
 const gameLoop = (fn) => {
-    let isWin = true;
-    let name = '';
-  
-    welcome();
+  let isWin = true;
+  const name = '';
 
-    for (let quest = 3; quest > 0 && isWin; quest -= 1) {
-        fn();
-    }
+  welcome();
 
-    if (isWin) {
-      console.log(`Congratulations, ${name}`);
-    }
-  };
+  for (let quest = 3; quest > 0 && isWin; quest -= 1) {
+    isWin = fn();
+  }
 
-  export { gameLoop };
+  if (isWin) {
+    console.log(`Congratulations, ${name}`);
+  }
+};
+
+export { gameLoop };
