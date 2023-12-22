@@ -8,3 +8,12 @@
 
 #### Brain-calc game
 [![asciicast](https://asciinema.org/a/cEsSLVXsgRyeijj0Sou2lcxCW.svg)](https://asciinema.org/a/cEsSLVXsgRyeijj0Sou2lcxCW)
+
+#### Brain-gcd game
+[![asciicast](https://asciinema.org/a/g85Zit5AHp9rI11a9dYTYbd6k.svg)](https://asciinema.org/a/g85Zit5AHp9rI11a9dYTYbd6k)
+
+#### Brain-progression game
+[![asciicast](https://asciinema.org/a/ghNub42oAOKlMJ4SP63IDSMHi.svg)](https://asciinema.org/a/ghNub42oAOKlMJ4SP63IDSMHi)
+
+#### Brain-prime game
+[![asciicast](https://asciinema.org/a/Xsb1KuRJUGCs1wbF6JmTVjPPM.svg)](https://asciinema.org/a/Xsb1KuRJUGCs1wbF6JmTVjPPM)
