@@ -16,4 +16,26 @@ const cgdSearch = (a, b) => {
     return tempA;
 }
 
-console.log(cgdSearch(60, 40));
+const checkAnswer = (calculated, answer) => (parseInt(calculated, 10) === parseInt(answer, 10));
+
+const game = (inputedName) => {
+  const name = inputedName;
+  let res = true;
+  let calculated = 0;
+  let a = generateRandomInt(1, 150);
+  let b = generateRandomInt(1, 150);
+  calculated = cgdSearch(a, b);
+  console.log(`Find the greatest common divisor of given numbers.\nQuestion: ${a} ${b}`);
+  const answer = getUserInput('Your answer: ');
+  if (checkAnswer(calculated, answer)) {
+    console.log('Correct!');
+  } else {
+    const correct = cgdSearch(a, b);
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.`);
+    console.log(`Let's try again, ${name}`);
+    res = false;
+  }
+  return res;
+};
+
+gameLoop(game);
