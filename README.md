@@ -3,8 +3,8 @@
 
 ### Asciinema
 
-## Brain-even game
+#### Brain-even game
 [![asciicast](https://asciinema.org/a/wQRwsG2115mrPA81IsabGo3BF.svg)](https://asciinema.org/a/wQRwsG2115mrPA81IsabGo3BF)
 
-## Brain-calc game
+#### Brain-calc game
 [![asciicast](https://asciinema.org/a/cEsSLVXsgRyeijj0Sou2lcxCW.svg)](https://asciinema.org/a/cEsSLVXsgRyeijj0Sou2lcxCW)
