@@ -18,7 +18,8 @@ const checkAnswer = (isEven, answer) => {
   return res;
 };
 
-const game = (name) => {
+const game = (inputedName) => {
+  const name = inputedName;
   let res = true;
   const num = generateRandomInt();
   console.log(`Answer "yes" if the number is even, otherwise answer "no".\nQuestion: ${num}`);
