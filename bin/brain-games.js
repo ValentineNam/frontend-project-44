@@ -11,5 +11,3 @@ const welcome = () => {
 };
 
 export default welcome;
-
-welcome();
