@@ -17,7 +17,7 @@ const gameLoop = (fn) => {
   }
 
   if (isWin) {
-    console.log(`Congratulations, ${name}`);
+    console.log(`Congratulations, ${name}!`);
   }
 };
 
