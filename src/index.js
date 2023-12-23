@@ -20,6 +20,11 @@ export const checkAnswer = (fn, answer) => {
   return res;
 };
 
+export const questions = (opt, arg) => {
+    console.log(`Answer "yes" if given number is ${opt}}. Otherwise answer "no".\nQuestion: ${arg}`);
+    return getUserInput('Your answer: ');
+}
+
 const gameLoop = (fn) => {
   let isWin = true;
   const name = welcome();

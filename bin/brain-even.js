@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import getUserInput from '../src/cli.js';
 import generateRandomInt from '../src/math-funcs.js';
 import gameLoop, { checkAnswer } from '../src/index.js';
+import { questions } from '../src/index.js';
 
 const checkIsEven = (num) => (num % 2 === 0);
 
@@ -10,8 +10,7 @@ const game = (inputedName) => {
   const name = inputedName;
   let res = true;
   const num = generateRandomInt();
-  console.log(`Answer "yes" if the number is even, otherwise answer "no".\nQuestion: ${num}`);
-  const answer = getUserInput('Your answer: ');
+  const answer = questions('even', num);
   if (checkAnswer(checkIsEven(num), answer)) {
     console.log('Correct!');
   } else {

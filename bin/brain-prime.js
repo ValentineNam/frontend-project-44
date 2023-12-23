@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
-import getUserInput from '../src/cli.js';
 import generateRandomInt from '../src/math-funcs.js';
 import gameLoop, { checkAnswer } from '../src/index.js';
+import { questions } from '../src/index.js';
 
 const checkIsPrime = (num) => {
   let res = true;
@@ -20,8 +20,7 @@ const game = (inputedName) => {
   const name = inputedName;
   let res = true;
   const num = generateRandomInt(1, 33);
-  console.log(`Answer "yes" if given number is prime. Otherwise answer "no".\nQuestion: ${num}`);
-  const answer = getUserInput('Your answer: ');
+  const answer = questions('prime', num);
   if (checkAnswer(checkIsPrime(num), answer)) {
     console.log('Correct!');
   } else {
