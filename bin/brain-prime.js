@@ -2,7 +2,7 @@
 
 import getUserInput from '../src/cli.js';
 import generateRandomInt from '../src/math-funcs.js';
-import gameLoop from '../src/index.js';
+import gameLoop, { checkAnswer } from '../src/index.js';
 
 const checkIsPrime = (num) => {
   let res = true;
@@ -13,18 +13,6 @@ const checkIsPrime = (num) => {
       break;
     }
   }
-  return res;
-};
-
-const checkAnswer = (isPrime, answer) => {
-  let res = false;
-
-  if (isPrime) {
-    res = answer === 'yes';
-  } else {
-    res = answer === 'no';
-  }
-
   return res;
 };
 

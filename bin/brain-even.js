@@ -2,21 +2,9 @@
 
 import getUserInput from '../src/cli.js';
 import generateRandomInt from '../src/math-funcs.js';
-import gameLoop from '../src/index.js';
+import gameLoop, { checkAnswer } from '../src/index.js';
 
 const checkIsEven = (num) => (num % 2 === 0);
-
-const checkAnswer = (isEven, answer) => {
-  let res = false;
-
-  if (isEven) {
-    res = answer === 'yes';
-  } else {
-    res = answer === 'no';
-  }
-
-  return res;
-};
 
 const game = (inputedName) => {
   const name = inputedName;

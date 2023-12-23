@@ -8,6 +8,18 @@ export const welcome = () => {
   return name;
 };
 
+export const checkAnswer = (fn, answer) => {
+  let res = false;
+
+  if (fn) {
+    res = answer === 'yes';
+  } else {
+    res = answer === 'no';
+  }
+
+  return res;
+};
+
 const gameLoop = (fn) => {
   let isWin = true;
   const name = welcome();
