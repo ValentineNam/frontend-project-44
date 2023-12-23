@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 import getUserInput from '../src/cli.js';
+import gameLoop from '../src/index.js';
 
 const welcome = () => {
   let name = '';
@@ -11,3 +12,5 @@ const welcome = () => {
 };
 
 export default welcome;
+
+gameLoop();

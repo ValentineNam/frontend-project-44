@@ -5,7 +5,7 @@ const gameLoop = (fn) => {
   const name = welcome();
 
   for (let quest = 3; quest > 0 && isWin; quest -= 1) {
-    isWin = fn(name);
+    isWin = fn? fn(name) : false;
   }
 
   if (isWin) {
