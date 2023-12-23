@@ -3,6 +3,12 @@
 
 ### About project
 
+#### Setup
+
+```bash
+make install
+```
+
 ### Asciinema
 
 #### Brain-even game
