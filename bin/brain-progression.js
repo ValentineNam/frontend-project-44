@@ -40,7 +40,7 @@ const game = (inputedName) => {
   } else {
     const correct = missedNumber;
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correct}'.`);
-    console.log(`Let's try again, ${name}`);
+    console.log(`Let's try again, ${name}!`);
     res = false;
   }
   return res;
