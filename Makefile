@@ -14,3 +14,9 @@ lint-fix:
 
 brain-games:
 	node bin/brain-games.js
+
+test:
+	npm test
+
+test-coverage:
+	npm test -- --coverage --coverageProvider=v8
