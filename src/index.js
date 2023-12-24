@@ -21,7 +21,7 @@ export const checkAnswer = (fn, answer) => {
 };
 
 export const questions = (opt, arg) => {
-    console.log(`Answer "yes" if given number is ${opt}. Otherwise answer "no".\nQuestion: ${arg}`);
+    console.log(`${opt}${arg}`);
     return getUserInput('Your answer: ');
 }
 

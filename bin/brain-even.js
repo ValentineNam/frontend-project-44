@@ -10,7 +10,8 @@ const game = (inputedName) => {
   const name = inputedName;
   let res = true;
   const num = generateRandomInt();
-  const answer = questions('even', num);
+  const quest = `Answer "yes" if the number is even, otherwise answer "no".\nQuestion: `;
+  const answer = questions(quest, num);
   if (checkAnswer(checkIsEven(num), answer)) {
     console.log('Correct!');
   } else {

@@ -20,7 +20,8 @@ const game = (inputedName) => {
   const name = inputedName;
   let res = true;
   const num = generateRandomInt(1, 33);
-  const answer = questions('prime', num);
+  const quest = `Answer "yes" if given number is prime. Otherwise answer "no".\nQuestion: `;
+  const answer = questions(quest, num);
   if (checkAnswer(checkIsPrime(num), answer)) {
     console.log('Correct!');
   } else {
