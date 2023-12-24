@@ -21,9 +21,9 @@ export const checkAnswer = (fn, answer) => {
 };
 
 export const questions = (opt, arg) => {
-    console.log(`${opt}${arg}`);
-    return getUserInput('Your answer: ');
-}
+  console.log(`${opt}${arg}`);
+  return getUserInput('Your answer: ');
+};
 
 const gameLoop = (fn) => {
   let isWin = true;
