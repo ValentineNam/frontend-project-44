@@ -10,6 +10,4 @@ const generateRandomInt = (min = -100, max = 100) => {
   return res;
 };
 
-export const checkIsEven = (num) => (num % 2 === 0);
-
 export default generateRandomInt;
