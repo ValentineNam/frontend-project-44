@@ -1,12 +1,13 @@
 import gameLoop from "../index.js";
-import { calculate, generateCalcParams } from "../math-funcs.js";
+import generateRandomInt, { gcdSearch } from "../math-funcs.js";
 import { checkAnswer, questions } from "../utils.js";
 
 const calcGame = () => {
-  const obj = generateCalcParams();
-  const expression = `${obj.firstNumber} ${obj.option} ${obj.secondNumber}`;
-  const quest = `What is the result of the expression?.\nQuestion: `;
-  const correct = calculate(obj.firstNumber, obj.option, obj.secondNumber);
+  const a = generateRandomInt(1, 150);
+  const b = generateRandomInt(1, 150);
+  const expression = `${a} ${b}`;
+  const quest = `Find the greatest common divisor of given numbers.\nQuestion: `;
+  const correct = gcdSearch(a, b);
   const answer = questions(quest, expression);
   const result = checkAnswer(correct, answer);
   if (result) {

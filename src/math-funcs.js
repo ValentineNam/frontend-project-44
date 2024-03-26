@@ -41,6 +41,18 @@ export const calculate = (a, op, b) => {
   return res;
 };
 
+export const gcdSearch = (a, b) => {
+  let temp;
+  let tempA = a;
+  let tempB = b;
+  while (tempB) {
+    temp = tempB;
+    tempB = tempA % tempB;
+    tempA = temp;
+  }
+  return tempA;
+};
+
 export const checkIsEven = (num) => (num % 2 === 0);
 
 export default generateRandomInt;
