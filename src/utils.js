@@ -9,9 +9,7 @@ export const welcome = () => {
   return name;
 };
 
-export const checkAnswer = (correct, answer) => {
-return correct.toString() === answer.toString();
-};
+export const checkAnswer = (correct, answer) => correct.toString() === answer.toString();
 
 export const questions = (opt, ...arg) => {
   console.log(`${opt}${arg}`);
