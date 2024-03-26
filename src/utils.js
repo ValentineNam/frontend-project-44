@@ -12,7 +12,7 @@ export const checkAnswer = (correct, answer) => {
 return correct === answer;
 };
 
-export const questions = (opt, arg) => {
+export const questions = (opt, ...arg) => {
   console.log(`${opt}${arg}`);
   return getUserInput('Your answer: ');
 };
