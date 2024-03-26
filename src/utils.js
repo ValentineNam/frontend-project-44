@@ -11,7 +11,7 @@ export const welcome = () => {
 
 export const checkAnswer = (correct, answer) => correct.toString() === answer.toString();
 
-export const questions = (opt, ...arg) => {
+export const questions = (opt, arg) => {
   console.log(`${opt}${arg}`);
   return getUserInput('Your answer: ');
 };
