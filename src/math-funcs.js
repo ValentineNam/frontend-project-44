@@ -53,6 +53,18 @@ export const gcdSearch = (a, b) => {
   return tempA;
 };
 
+export const checkIsPrime = (num) => {
+  let res = true;
+  const max = Math.round(Math.sqrt(num));
+  for (let i = 2; i <= max; i += 1) {
+    if (num % i === 0) {
+      res = false;
+      break;
+    }
+  }
+  return res;
+};
+
 export const checkIsEven = (num) => (num % 2 === 0);
 
 export default generateRandomInt;

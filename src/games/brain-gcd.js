@@ -2,7 +2,7 @@ import gameLoop from "../index.js";
 import generateRandomInt, { gcdSearch } from "../math-funcs.js";
 import { checkAnswer, questions } from "../utils.js";
 
-const calcGame = () => {
+const gcdGame = () => {
   const a = generateRandomInt(1, 150);
   const b = generateRandomInt(1, 150);
   const expression = `${a} ${b}`;
@@ -18,6 +18,6 @@ const calcGame = () => {
   return result;
 }
 
-const game = () => { gameLoop(calcGame) };
+const game = () => { gameLoop(gcdGame) };
 
 export default game;
