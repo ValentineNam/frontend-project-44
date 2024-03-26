@@ -13,6 +13,4 @@ const gameLoop = (fn) => {
   }
 };
 
-// gameLoop(evenGame);
-
 export default gameLoop;
